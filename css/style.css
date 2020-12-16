@@ -27,7 +27,6 @@ input[type=number],input[type=text], input[type=password], select, textarea {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
   background-color: #4CAF50;
   color: white;
@@ -38,26 +37,23 @@ button {
   width: 100%;
 }
 
-/* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
 
-/* Extra style for the cancel button (red) */
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
 }
 
-/* Center the avatar image inside this container */
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
 }
 
 img.avatar {
-  width: 40%;
+  width: 10%;
   border-radius: 50%;
 }
 
@@ -81,29 +77,27 @@ span.psw {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
   padding-top: 60px;
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
+  margin: 5px auto;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
 }
 
 .close {
-  /* Position it in the top right corner outside of the modal */
   position: absolute;
   right: 25px;
   top: 0;
@@ -132,4 +126,196 @@ span.psw {
 @keyframes animatezoom {
   from {transform: scale(0)}
   to {transform: scale(1)}
+}
+
+
+article {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-left: 18rem;
+    margin-right: 4rem;
+    max-width: calc(100% - 14rem - 4rem);
+}
+article header {
+    border-bottom: 2px dashed #8fadcc;
+    color: #641e1e;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+article .date {
+    color: gray;
+    margin-top: -2rem;
+}
+article section {
+    max-width: 73rem;
+    line-height: 175%;
+}
+article section a:any-link,
+article section a:hover {
+    color: #004c99;
+    text-decoration: none;
+}
+article section a:hover {
+    text-decoration: underline;
+}
+article section code,
+article section pre {
+    font-family: AdobeSourceCodePro, monospace;
+    font-size: 1.5rem;
+}
+article section pre {
+    line-height: 150%;
+    overflow: auto;
+    padding: 1rem;
+}
+@media only screen and (max-width: 950px) {
+    nav {
+        border-right: 0;
+        border-bottom: 1px solid #8fadcc;
+        height: 3rem;
+        padding-top: 0;
+        width: 100%;
+    }
+    nav .logo {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        padding-left: 2rem;
+    }
+    article {
+        padding-top: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 100%;
+    }
+    article section {
+        max-width: 100%;
+    }
+}
+div.principal {
+padding: 15 10px;
+}
+
+div.principal > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.principal > ul > li {
+  display: inline;
+}
+
+nav {
+    background-color: #cdd2d7;
+    border-right: 1px solid #8fadcc;
+    height: 100%;
+    line-height: 2;
+    position: fixed;
+    width: 14rem;
+}
+nav .logo {
+    background-color: #f8f8f8;
+    border: 1px solid #8fadcc;
+    border-radius: 50%;
+    height: auto;
+    margin: 2rem auto;
+    width: 75%;
+}
+nav .logo img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    width: 80%;
+    vertical-align: middle;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li a:any-link,
+nav ul li a:hover {
+    color: #004c99;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    text-decoration-line: none;
+}
+nav ul li a:hover {
+    color: #0080ff;
+}
+
+article {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-left: 18rem;
+    margin-right: 4rem;
+    max-width: calc(100% - 14rem - 4rem);
+}
+article header {
+    border-bottom: 2px dashed #8fadcc;
+    color: #641e1e;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+article .date {
+    color: gray;
+    margin-top: -2rem;
+}
+article section {
+    max-width: 73rem;
+    line-height: 175%;
+}
+article section a:any-link,
+article section a:hover {
+    color: #004c99;
+    text-decoration: none;
+}
+article section a:hover {
+    text-decoration: underline;
+}
+article section code,
+article section pre {
+    font-family: AdobeSourceCodePro, monospace;
+    font-size: 1.5rem;
+}
+article section pre {
+    line-height: 150%;
+    overflow: auto;
+    padding: 1rem;
+}
+@media only screen and (max-width: 950px) {
+    nav {
+        border-right: 0;
+        border-bottom: 1px solid #8fadcc;
+        height: 3rem;
+        padding-top: 0;
+        width: 100%;
+    }
+    nav .logo {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        padding-left: 2rem;
+    }
+    article {
+        padding-top: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 100%;
+    }
+    article section {
+        max-width: 100%;
+    }
 }
