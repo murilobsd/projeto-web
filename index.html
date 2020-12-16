@@ -15,12 +15,70 @@
 <img src="imgs/logo.jpg" width="30%">
 <div class="principal">
 <ul>
-<li><a href="pages/condutor/index.html">Login Condutor</a></li>
-<li><a href="pages/fiscal/cadastrar_condutor.html">Login Fiscal</a></li>
-<li><a href="pages/policial/aplicar_multa.html">Login Policial</a></li>
+<li> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login Condutor</button>
+<li> <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login Fiscal</button>
+<li> <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Login Policial</button>
 </ul>
 </div>
 </center>
 
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="">
+
+    <div class="container">
+      <label for="uname"><b>CNH</b></label>
+      <input type="number" placeholder="12344" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite a senha" name="psw" required>
+
+      <a href="pages/condutor/index.html" class="button">Logar</button>
+    </div>
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="">
+
+    <div class="container">
+      <label for="uname"><b>Usuario</b></label>
+      <input type="text" placeholder="fiscal1" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite a senha" name="psw" required>
+
+      <a href="pages/fiscal/cadastrar_condutor.html" class="button">Logar</button>
+    </div>
+  </form>
+</div>
+
+
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="">
+
+    <div class="container">
+      <label for="uname">Matrícula<b></b></label>
+      <input type="number" placeholder="12344" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite a senha" name="psw" required>
+
+      <a href="pages/policial/aplicar_multa.html" class="button">Logar</button>
+    </div>
+  </form>
+</div>
+
+
 </body>
+<script type="application/javascript" src="js/app.js"></script>
 </html>
